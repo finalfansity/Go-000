@@ -26,9 +26,9 @@ func newSvc() svc {
 var dbeng *gorm.DB
 
 type production struct {
-	pid     uint   `json:"pid"`
-	name    string `json:"name"`
-	storage uint   `json:"storage"`
+	pid     uint
+	name    string
+	storage uint
 }
 
 func (db *Db) queryProductionName(id uint) (*production, error) {
